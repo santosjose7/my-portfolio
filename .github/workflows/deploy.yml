@@ -3,7 +3,10 @@ name: Deploy Vite Site to GitHub Pages
 on:
   push:
     branches:
-      - main  # or 'master', depending on your default branch
+      - main
+
+permissions:
+  contents: write 
 
 jobs:
   deploy:
@@ -27,5 +30,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.MYTOKEN }}
           publish_dir: ./dist
