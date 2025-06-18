@@ -8,11 +8,11 @@ export default function Contact() {
         <p className="contact-info">
           Have a project in mind or just want to say hello? Feel free to reach out!
         </p>
-        <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
-          <input type="text" name="name" required>
-          <input type="email" name="email" required>
-          <textarea name="message" required></textarea>
-          <button type="submit">Send message</button>
+        <form action="https://formsubmit.co/mokuaj42@gmail.com" className="contact-form" onSubmit={(e) => e.preventDefault()}>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
         </form>
       </div>
     </section>
